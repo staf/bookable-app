@@ -9,7 +9,7 @@ namespace Staf\Bookable;
  *
  * @package Staf\Bookable
  */
-interface Booking
+interface BookingMeta
 {
     //
 }
