@@ -15,7 +15,7 @@ class BookingAgent
     protected $client;
 
     /**
-     * @var BookingDuration[]
+     * @var BookingTime[]
      */
     protected $times = [];
 
@@ -50,7 +50,7 @@ class BookingAgent
     /**
      * Add one or multiple times for the booking.
      *
-     * @param  BookingDuration|BookingDuration[] $times
+     * @param  BookingTime|BookingTime[] $times
      * @return BookingAgent
      * @throws \InvalidArgumentException
      */
@@ -61,7 +61,7 @@ class BookingAgent
         }
 
         foreach ($times as $time) {
-            if (!$time instanceof BookingDuration) {
+            if (!$time instanceof BookingTime) {
                 throw new \InvalidArgumentException("Times passed to BookingManager::at must implement the BookingDuration interface.");
             }
 

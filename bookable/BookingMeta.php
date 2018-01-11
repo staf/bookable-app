@@ -22,7 +22,7 @@ interface BookingMeta
     public function attachClient(BookingClient $client);
 
     /**
-     * @param BookingDuration[] $times
+     * @param BookingTime[] $times
      */
     public function attachTimes(array $times);
 }

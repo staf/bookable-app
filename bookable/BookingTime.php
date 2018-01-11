@@ -10,7 +10,7 @@ namespace Staf\Bookable;
  *
  * @package Staf\Bookable
  */
-interface BookingDuration
+interface BookingTime
 {
     //
 }
