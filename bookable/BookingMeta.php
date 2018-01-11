@@ -11,5 +11,18 @@ namespace Staf\Bookable;
  */
 interface BookingMeta
 {
-    //
+    /**
+     * @param Bookable $bookable
+     */
+    public function attachBookable(Bookable $bookable);
+
+    /**
+     * @param BookingClient $client
+     */
+    public function attachClient(BookingClient $client);
+
+    /**
+     * @param BookingDuration[] $times
+     */
+    public function attachTimes(array $times);
 }
